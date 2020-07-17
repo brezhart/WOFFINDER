@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/nes.css@latest/css/nes.min.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/8bit-wonder" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+    {%- endif -%}
+    <title>Base finder</title>
+</head>
+<body>
+<div class="canvasCont"><canvas id="canvas"></canvas></div>
+<script src="index.js"></script>
+<div class="textCont">
+    <h1>Base<br>Finder </h1>
+    <h2>Made by Richard_Dino. UFI</h2>
+    <div class="nes-container with-title is-centered">
+        <p class="title">find a base</p>
+        <p>Type faction name here and press FIND</p>
+        <div class="nes-field">
+            <label for="name_field">Faction</label>
+            <input type="text" id="name_field" class="nes-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </div>
+        <button type="button" class="nes-btn is-warning" id="findBtn">FIND</button>
+        <p id="cantFind"></p>
+        <div class="nes-table-responsive" id="tableCont">
+            <p id="targetPlace"></p>
+            <table class="nes-table is-bordered is-centered" id="table" style="display: none; margin: auto; margin-top: 5px; margin-bottom: 5px">
+                <thead>
+                <tr>
+                    <th>Table.is-bordered</th>
+                    <th>Table.is-centered</th>
+                    <th>Table.is-centered</th>
+                    <th>Table.is-centered</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Thou hast had a good morning</td>
+                    <td>Thou hast had a good afternoon</td>
+                    <td>Thou hast had a good evening</td>
+                    <td>Thou hast had a good night</td>
+                </tr>
+                <tr>
+                    <td>Thou hast had a good morning</td>
+                    <td>Thou hast had a good afternoon</td>
+                    <td>Thou hast had a good evening</td>
+                    <td>Thou hast had a good night</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="margin: 10px">Bug? Suggestion? Contact me brezhart#3023</p>
+        <p style="margin-top: 10px" ><span id="donate">Donate for future updates! <br> /pay Richard_Dino </span></p>
+
+    </div>
+
+</div>
+<script src="info.js"></script>
+<script src="finder.js"></script>
+</body>
+</html>

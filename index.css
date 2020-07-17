@@ -1,0 +1,88 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://fontlibrary.org/face/8bit-wonder);
+}
+
+body{
+    background-color: #E0E0E0;
+    /*font-family: '8BITWONDERNominal';*/
+    font-family: 'Press Start 2P', bold;
+    font-weight: bold;
+}
+.canvasCont{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #E0E0E0;
+}
+canvas{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    display: block;
+
+
+    font-size: 60px;
+
+
+    text-align: center;
+}
+h2{
+    display: block;
+
+
+    font-size: 30px;
+    text-align: center;
+}
+.textCont{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    /* This is a magic number based on the context in which this snippet is used and effects the perspective */
+    /* This sets allows us to transform the text on a 3D plane, and is somewhat a magic number */
+    /* The rest is totally up to personal styling preferences */
+    text-shadow: yellow 4px 4px 0;
+    text-align: justify;
+
+
+}
+.nes-container{
+    background-color: #E0E0E0;
+}
+.nes-container p{
+    background-color: #E0E0E0 !important;
+}
+.nes-container input{
+    background-color: #E0E0E0;
+}
+.nes-container button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nes-container table, #targetPlace{
+    text-shadow: black 0px 0px 0;
+}
+table{
+}
+input {outline:none;}
+@keyframes scal{
+    from{
+        transform: scale(1);
+    } 50%{
+    transform: scale(1.1);
+          }
+    to{
+        transform: scale(1);
+    }
+
+}
+#donate{
+    display: block;
+    background-color: transparent;
+    animation: scal 0.6s infinite;
+}
